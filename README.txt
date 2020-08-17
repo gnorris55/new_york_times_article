@@ -1,0 +1,1 @@
+project focassed on recreating a new-york times article using grid, floats, positioning, and flex (potentially)
