@@ -1,18 +1,96 @@
-.container {
-  display: grid;
-  grid-template-columns: 15% 65% 10% 10%;
-  align-items: baseline;
-  border-bottom: lightgray solid 1px; }
-  .container button {
-    width: 125px;
-    height: 30px;
-    border-radius: 2px;
-    background-color: #4c6c96;
-    border: #2f5280 solid 1px;
-    color: white; }
-  .container .NYT-logo {
-    margin-left: 20px;
-    top: 0px; }
+header {
+  position: stick; }
+  header .container {
+    display: grid;
+    position: sticky;
+    grid-template-columns: 15% 65% 10% 10%;
+    align-items: baseline;
+    border-bottom: lightgray solid 1px; }
+    header .container button {
+      width: 125px;
+      height: 30px;
+      border-radius: 2px;
+      background-color: #4c6c96;
+      border: #2f5280 solid 1px;
+      color: white; }
+    header .container .NYT-logo {
+      margin-left: 20px;
+      top: 0px; }
+
+article .article-title {
+  display: flex;
+  justify-content: center; }
+  article .article-title h3 {
+    text-align: left;
+    padding: 20px;
+    font-size: 30px; }
+article .article-image {
+  text-align: center; }
+  article .article-image img {
+    width: 1150px; }
+  article .article-image p {
+    text-align: left;
+    width: 850px;
+    color: #6e6e6e;
+    display: block;
+    padding-left: 135px;
+    margin: 0; }
+article .article-body {
+  margin-top: 30px; }
+  article .article-body .contents {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 3000px; }
+    article .article-body .contents .date {
+      margin-top: 20px; }
+    article .article-body .contents .body {
+      margin-top: 20px; }
+      article .article-body .contents .body .thanks {
+        margin: 40px 0 40px 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        text-align: center; }
+        article .article-body .contents .body .thanks .border-top {
+          margin-bottom: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          border-top: lightgray solid 1px;
+          width: 100px; }
+        article .article-body .contents .body .thanks .border-bottom {
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom: lightgray solid 1px;
+          width: 100px; }
+        article .article-body .contents .body .thanks a {
+          color: #2f5280;
+          text-decoration: none; }
+
+aside .editor-picks {
+  position: absolute;
+  right: 0px;
+  top: 1150px;
+  width: 300px;
+  height: 500px; }
+  aside .editor-picks .title {
+    width: 250px;
+    padding-bottom: 5px;
+    border-bottom: lightgrey solid 1px; }
+  aside .editor-picks .article {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 25% 50%; }
+    aside .editor-picks .article .item {
+      display: inline-block; }
+      aside .editor-picks .article .item p {
+        margin-top: 0px;
+        vertical-align: top;
+        font-size: 14px; }
+      aside .editor-picks .article .item img {
+        width: 60px;
+        height: 60px; }
 
 .centered {
   text-align: center; }
